@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAYSSAL HADDOUCHI</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body id="top">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <a href="#home">
+                <img src="Images/LOGO.png" alt="FAYSSAL HADDOUCHI LOGO">
+            </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero">
+        <h1>FAYSSAL HADDOUCHI</h1>
+        <h2 class="subtitle">3rd YEAR ARCHITECTURE STUDENT | ENSA GRENOBLE</h2>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+        <h1 class="page-title">Projects</h1>
+        <div class="project">
+            <img src="Images/PROJECT 1.jpg" alt="Project 1">
+            <h2>Project 1</h2>
+        </div>
+        <div class="project">
+            <img src="Images/PROJECT 2.jpg" alt="Project 2">
+            <h2>Project 2</h2>
+        </div>
+        <div class="project">
+            <img src="Images/PROJECT 3.jpg" alt="Project 3">
+            <h2>Project 3</h2>
+        </div>
+        <div class="project">
+            <img src="Images/PROJECT 4.JPEG" alt="Project 4">
+            <h2>Project 4</h2>
+        </div>
+    </section>
+
+    <!-- RESUME SECTION -->
+
+    <section id="resume" class="resume">
+        <h1 class="page-title">Resume</h1>
+        <div class="row">
+            <div class="resume-picture">
+                <img src="Images/JURY.jpg" alt="">
+            </div>
+            <div class="resume-infos">
+                <p class="intro">I am Fayssal Haddouchi, a third-year architecture student currently on an exchange program in Istanbul. Curious and driven, I approach every project as an opportunity to learn and refine my practice. My journey, shaped by diverse experiences, has allowed me to develop a functional and creative approach while fueling my constant desire to explore new ideas and embrace challenges, especially on an international scale.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                    <p class="tab-links"onclick="opentab('experiences')">EXPERIENCES</p>
+                    <p class="tab-links"onclick="opentab('education')">EDUCATION</p>
+                    <p class="tab-links"onclick="opentab('languages')">LANGUAGES</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>
+                            <span>AUTOCAD</span><br>
+                            <div class="bar-wrapper">
+                                <div class="bar blue"></div>
+                                <div class="bar green" style="width: 85%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>RHINOCEROS 3D</span><br>
+                            <div class="bar-wrapper">
+                                <div class="bar blue"></div>
+                                <div class="bar green" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>SKETCHUP</span><br>
+                            <div class="bar-wrapper">
+                                <div class="bar blue"></div>
+                                <div class="bar green" style="width: 70%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>PHOTOSHOP</span><br>
+                            <div class="bar-wrapper">
+                                <div class="bar blue"></div>
+                                <div class="bar green" style="width: 70%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>INDESIGN</span><br>
+                            <div class="bar-wrapper">
+                                <div class="bar blue"></div>
+                                <div class="bar green" style="width: 70%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>LUMION</span><br>
+                            <div class="bar-wrapper">
+                                <div class="bar blue"></div>
+                                <div class="bar green" style="width: 50%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experiences">
+                    <ul>
+                        <li><span>JUNE - AUGUST 2024</span><br>Internship in architectural agency - GROUPE L - LUXEMBOURG</li>
+                        <li><span>JUNE 2023</span><br>Internship on a structural work site - ECO BATI CONCEPT - ELBEUF</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>3rd YEAR ARCHITECTURE UNDERGRADUATE</span><br>Mimar Sinan University - Istanbul (Erasmus exchange)</li>
+                        <li><span>2nd YEAR ARCHITECTURE UNDERGRADUATE</span><br>National Higher School of Architecture - Grenoble</li>
+                        <li><span>1st YEAR ARCHITECTURE UNDERGRADUATE</span><br>National Higher School of Architecture - Grenoble</li>
+                        <li><span>BACALAUREATE STI2D</span><br>Robert Schuman High School - Le Havre</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="languages">
+                    <ul>
+                        <li><span>FRENCH</span><br>Native language</li>
+                        <li><span>ENGLISH</span><br>B1+ Level</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <!-- RESUME TOUCH BAR -->
+            <script>
+
+                var tablinks = document.getElementsByClassName("tab-links")
+                var tabcontents = document.getElementsByClassName("tab-contents")
+            
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                }
+            
+            </script>
+    
+
+    <!-- CONTACT SECTION -->
+
+                <section class="contact-section" id="contact">
+                    <h1 class="page-title">Contact</h1>
+                    <p>Here is my contact information.  Do not hesitate to contact me!</p>
+                    
+                    <div class="contact-info">
+                      <div class="contact-item">
+                        
+                        <p><strong>Email :</strong> <a href="mailto:fayssalhaddouchi@icloud.com">fayssalhaddouchi@icloud.com</a></p>
+                        <p><strong>Téléphone :</strong> <a href="tel:+33749281592">+33 7 49 28 15 92</a></p>
+                        <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/fayssal-haddouchi-49106127b/" target="_blank">LinkedIn</a></p>
+                        <p><strong>WhatsApp :</strong> <a href="https://wa.me/33749281592" target="_blank">WhatsApp</a></p>
+                        
+                        <!-- Bouton Download CV -->
+                        <a href="Images/CV.pdf" download="Fayssal HADDOUCHI CV">
+                          <button class="download-btn">Download CV</button>
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                  
+              
+          
+      
+
+    <!-- BUTTON RETURN FIRST PAGE -->
+    <a href="#" class="scroll-to-top" id="scroll-to-top">
+        <span>&#8593;</span>
+    </a>
+
+</body>
+</html>
