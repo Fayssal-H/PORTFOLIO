@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAYSSAL HADDOUCHI</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<div class="language-switcher">
+    <span id="en-btn" class="language-option active">EN</span>
+    <span id="fr-btn" class="language-option">FR</span>
+  </div>
+
+<body id="top">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <a href="#home">
+                <img src="Images/LOGO.png" alt="FAYSSAL HADDOUCHI LOGO">
+            </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home" 
+                       data-lang-fr="Accueil" 
+                       data-lang-en="Home">Home</a></li>
+                <li><a href="#projects" 
+                       data-lang-fr="Projets" 
+                       data-lang-en="Projects">Projects</a></li>
+                <li><a href="#resume" 
+                       data-lang-fr="CV" 
+                       data-lang-en="Resume">Resume</a></li>
+                <li><a href="#contact" 
+                       data-lang-fr="Contact" 
+                       data-lang-en="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero">
+        <h1>FAYSSAL HADDOUCHI</h1>
+        <h2 class="subtitle" 
+    data-lang-fr="Étudiant en 3ème année d'architecture | ENSA Grenoble" 
+    data-lang-en="3rd YEAR ARCHITECTURE STUDENT | ENSA GRENOBLE">
+    Étudiant en 3ème année d'architecture | ENSA Grenoble
+</h2>
+    </section>
+
+
+ <!-- PROJECTS SECTION -->
+ <section id="projects" class="section">
+    <h1 class="page-title" data-lang-fr="Projets" data-lang-en="Projects">Projets</h1>
+    <div class="project" data-project-id="1">
+        <img src="Images/PROJECT 1.jpg" alt="Project 1">
+        <h2 data-lang-fr="PROJET OSSATURE" data-lang-en="FRAME STRUCTURE">Projet 1</h2>
+    </div>
+    <div class="project" data-project-id="2">
+        <img src="Images/PROJECT 2.jpg" alt="Project 2">
+        <h2 data-lang-fr="PROJET MASSE/OSSATURE" data-lang-en="MASS/FRAME STRUCTURE">Projet 2</h2>
+    </div>
+    <div class="project" data-project-id="3">
+        <img src="Images/PROJECT 3.jpg" alt="Project 3">
+        <h2 data-lang-fr="RESIDENCE ETUDIANTE A GRENOBLE" data-lang-en="STUDENT RESIDENCE GRENOBLE">Projet 3</h2>
+    </div>
+    <div class="project" data-project-id="4">
+        <img src="Images/PROJECT 4.JPEG" alt="Project 4">
+        <h2 data-lang-fr="COMPLEXE POLYVALENT PROVEYSIEUX" data-lang-en="MULTIPURPOSE COMPLEX PROVEYSIEUX">Projet 4</h2>
+    </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="project-modal">
+    <div class="modal-content">
+        <button class="close-modal" id="close-modal">&times;</button>
+        <div class="carousel-container">
+            <div class="carousel" id="carousel">
+                <!-- Les images seront ajoutées dynamiquement via JavaScript -->
+            </div>
+            <div class="carousel-controls">
+                <button class="control-btn" id="prev-btn">&#10094;</button>
+                <button class="control-btn" id="next-btn">&#10095;</button>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- RESUME SECTION -->
+<section id="resume" class="resume">
+    <h1 class="page-title" 
+        data-lang-fr="CV" 
+        data-lang-en="Resume">
+        Resume
+    </h1>
+    <div class="row">
+        <div class="resume-picture">
+            <img src="Images/JURY.jpg" alt="">
+        </div>
+        <div class="resume-infos">
+            <p class="intro" 
+                data-lang-fr="Je suis Fayssal Haddouchi, un étudiant en troisième année d'architecture actuellement en programme d'échange à Istanbul. Curieux et motivé, j'aborde chaque projet comme une opportunité d'apprendre et d'affiner ma pratique. Mon parcours, façonné par des expériences diverses, m'a permis de développer une approche fonctionnelle et créative tout en nourrissant mon désir constant d'explorer de nouvelles idées et de relever des défis, en particulier à l'international." 
+                data-lang-en="I am Fayssal Haddouchi, a third-year architecture student currently on an exchange program in Istanbul. Curious and driven, I approach every project as an opportunity to learn and refine my practice. My journey, shaped by diverse experiences, has allowed me to develop a functional and creative approach while fueling my constant desire to explore new ideas and embrace challenges, especially on an international scale.">
+                I am Fayssal Haddouchi, a third-year architecture student currently on an exchange program in Istanbul. Curious and driven, I approach every project as an opportunity to learn and refine my practice. My journey, shaped by diverse experiences, has allowed me to develop a functional and creative approach while fueling my constant desire to explore new ideas and embrace challenges, especially on an international scale.
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')" 
+                   data-lang-fr="COMPETENCES" data-lang-en="SKILLS">SKILLS</p>
+                <p class="tab-links" onclick="opentab('experiences')" 
+                   data-lang-fr="EXPERIENCES" data-lang-en="EXPERIENCES">EXPERIENCES</p>
+                <p class="tab-links" onclick="opentab('education')" 
+                   data-lang-fr="EDUCATION" data-lang-en="EDUCATION">EDUCATION</p>
+                <p class="tab-links" onclick="opentab('languages')" 
+                   data-lang-fr="LANGUES" data-lang-en="LANGUAGES">LANGUAGES</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li>
+                        <span>AUTOCAD</span><br>
+                        <div class="bar-wrapper">
+                            <div class="bar blue"></div>
+                            <div class="bar green" style="width: 85%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>RHINOCEROS 3D</span><br>
+                        <div class="bar-wrapper">
+                            <div class="bar blue"></div>
+                            <div class="bar green" style="width: 80%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>SKETCHUP</span><br>
+                        <div class="bar-wrapper">
+                            <div class="bar blue"></div>
+                            <div class="bar green" style="width: 70%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>PHOTOSHOP</span><br>
+                        <div class="bar-wrapper">
+                            <div class="bar blue"></div>
+                            <div class="bar green" style="width: 70%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>INDESIGN</span><br>
+                        <div class="bar-wrapper">
+                            <div class="bar blue"></div>
+                            <div class="bar green" style="width: 70%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>LUMION</span><br>
+                        <div class="bar-wrapper">
+                            <div class="bar blue"></div>
+                            <div class="bar green" style="width: 50%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experiences">
+                <ul>
+                    <li><span data-lang-fr="JUIN - AOÛT 2024" data-lang-en="JUNE - AUGUST 2024"></span><br>
+                        <span data-lang-fr="Stage dans une agence d'architecture - GROUPE L - LUXEMBOURG" data-lang-en="Internship in architectural agency - GROUPE L - LUXEMBOURG"></span>
+                    </li>
+                    <li><span data-lang-fr="JUIN 2023" data-lang-en="JUNE 2023"></span><br>
+                        <span data-lang-fr="Stage sur un chantier de travaux structurels - ECO BATI CONCEPT - ELBEUF" data-lang-en="Internship on a structural work site - ECO BATI CONCEPT - ELBEUF"></span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span data-lang-fr="3ÈME ANNÉE ARCHITECTURE" data-lang-en="3rd YEAR ARCHITECTURE UNDERGRADUATE"></span><br>
+                        <span data-lang-fr="Université Mimar Sinan - Istanbul (Échange Erasmus)" data-lang-en="Mimar Sinan University - Istanbul (Erasmus exchange)"></span>
+                    </li>
+                    <li><span data-lang-fr="2ÈME ANNÉE ARCHITECTURE" data-lang-en="2nd YEAR ARCHITECTURE UNDERGRADUATE"></span><br>
+                        <span data-lang-fr="École Nationale Supérieure d'Architecture - Grenoble" data-lang-en="National Higher School of Architecture - Grenoble"></span>
+                    </li>
+                    <li><span data-lang-fr="1ÈRE ANNÉE ARCHITECTURE" data-lang-en="1st YEAR ARCHITECTURE UNDERGRADUATE"></span><br>
+                        <span data-lang-fr="École Nationale Supérieure d'Architecture - Grenoble" data-lang-en="National Higher School of Architecture - Grenoble"></span>
+                    </li>
+                    <li><span data-lang-fr="BACCALAURÉAT STI2D" data-lang-en="BACALAUREATE STI2D"></span><br>
+                        <span data-lang-fr="Lycée Robert Schuman - Le Havre" data-lang-en="Robert Schuman High School - Le Havre"></span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="tab-contents" id="languages">
+                <ul>
+                    <li><span data-lang-fr="FRANÇAIS" data-lang-en="FRENCH"></span><br>
+                        <span data-lang-fr="Langue maternelle" data-lang-en="Native language"></span>
+                    </li>
+                    <li><span data-lang-fr="ANGLAIS" data-lang-en="ENGLISH"></span><br>
+                        <span data-lang-fr="Niveau B1+" data-lang-en="B1+ Level"></span>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+            <!-- RESUME TOUCH BAR -->
+            <script>
+
+                var tablinks = document.getElementsByClassName("tab-links")
+                var tabcontents = document.getElementsByClassName("tab-contents")
+            
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                }
+            
+            </script>
+    
+
+<!-- CONTACT SECTION -->
+<section class="contact-section" id="contact">
+    <div class="contact-header">
+        <h1 class="page-title" 
+            data-lang-fr="Contact" 
+            data-lang-en="Contact">
+            Contact
+        </h1>
+        <p 
+            data-lang-fr="N'hésitez pas à me contacter via les informations ci-dessous !" 
+            data-lang-en="Feel free to reach out to me using the contact information below !">
+            Here is my contact information. Do not hesitate to contact me!
+        </p>
+    </div>
+
+    <!-- Contact Info et Formulaire côte à côte pour les grands écrans -->
+    <div class="contact-section-content">
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <div class="contact-item">
+                <p><strong 
+                    data-lang-fr="Email :" 
+                    data-lang-en="Email :">Email :</strong> 
+                    <a href="mailto:fayssalhaddouchi@icloud.com">fayssalhaddouchi@icloud.com</a>
+                </p>
+                <p><strong 
+                    data-lang-fr="Téléphone :" 
+                    data-lang-en="Phone :">Téléphone :</strong> 
+                    <a href="tel:+33749281592">+33 7 49 28 15 92</a>
+                </p>
+                <p><strong 
+                    data-lang-fr="LinkedIn :" 
+                    data-lang-en="LinkedIn :">LinkedIn :</strong> 
+                    <a href="https://www.linkedin.com/in/fayssal-haddouchi-49106127b/" target="_blank">LinkedIn</a>
+                </p>
+                <p><strong 
+                    data-lang-fr="WhatsApp :" 
+                    data-lang-en="WhatsApp :">WhatsApp :</strong> 
+                    <a href="https://wa.me/33749281592" target="_blank">WhatsApp</a>
+                </p>
+
+                <!-- Bouton Download CV -->
+                <a href="Images/CV.pdf" download="Fayssal HADDOUCHI CV">
+                    <button class="download-btn" 
+                        data-lang-fr="Télécharger le CV" 
+                        data-lang-en="Download CV">
+                        Download CV
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required />
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn" 
+                    data-lang-fr="Envoyer" 
+                    data-lang-en="Send">
+                    Send
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+  
+      
+
+<!-- BUTTON RETURN FIRST PAGE -->
+<div class="scroll-to-top" id="scroll-to-top">
+    &#8593;
+</div>
+
+
+<!-- JAVASCRIPT -->
+<script>
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Scroll-to-top button
+    const scrollToTopBtn = document.getElementById('scroll-to-top');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.style.display = 'block';
+        } else {
+            scrollToTopBtn.style.display = 'none';
+        }
+    });
+
+    scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    window.addEventListener('scroll', () => {
+    const header = document.querySelector('.header');
+    if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+</script>
+
+<script>
+    // Sélection des boutons et des éléments traduisibles
+    const frBtn = document.getElementById('fr-btn');
+    const enBtn = document.getElementById('en-btn');
+    const contentElements = document.querySelectorAll('[data-lang-fr]');
+
+    // Fonction pour changer la langue
+    function changeLanguage(lang) {
+        contentElements.forEach(element => {
+            // Remplace le texte par celui de la langue choisie
+            const text = element.getAttribute(`data-lang-${lang}`);
+            if (text) {
+                element.textContent = text;
+            }
+        });
+
+        // Mise à jour des classes actives pour indiquer la langue active
+        if (lang === 'fr') {
+            frBtn.classList.add('active');
+            enBtn.classList.remove('active');
+        } else if (lang === 'en') {
+            enBtn.classList.add('active');
+            frBtn.classList.remove('active');
+        }
+    }
+
+    // Ajout des événements de clic aux boutons
+    frBtn.addEventListener('click', () => changeLanguage('fr'));
+    enBtn.addEventListener('click', () => changeLanguage('en'));
+
+    // Initialiser la langue par défaut en anglais au chargement de la page
+    window.addEventListener('DOMContentLoaded', () => {
+        changeLanguage('en');
+    });
+</script>
+
+<script>
+// Récupérer les éléments HTML
+const modal = document.getElementById('project-modal');
+const carousel = document.getElementById('carousel');
+const closeModal = document.getElementById('close-modal');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+const pageNumber = document.createElement('div'); // Ajouter un conteneur pour le numéro de la page
+
+// Liste des images pour chaque projet
+const projectImages = {
+    1: ["Images/P1-1.png", "Images/P1-2.png", "Images/P1-3.png", "Images/P1-4.png"],
+    2: ["Images/P2-1.png", "Images/P2-2.png", "Images/P2-3.png", "Images/P2-4.png"],
+    3: ["Images/P3-1.png", "Images/P3-2.png", "Images/P3-3.png", "Images/P3-4.png"],
+    4: ["Images/P4-1.png", "Images/P4-2.png", "Images/P4-3.png", "Images/P4-4.png"]
+};
+
+let currentProjectId = null;
+let currentIndex = 0;
+let scrollPosition = 0; // Variable pour garder la position de défilement
+
+// Afficher le modal avec animation
+document.querySelectorAll('.project').forEach(project => {
+    project.addEventListener('click', () => {
+        currentProjectId = project.getAttribute('data-project-id');
+        loadImages(currentProjectId);
+
+        // Afficher le modal après un léger délai pour que la transition se déclenche
+        setTimeout(() => {
+            modal.style.display = 'flex'; // Rendre le modal visible
+            setTimeout(() => {
+                modal.classList.add('active'); // Ajouter la classe 'active' pour appliquer la transition d'opacité et de visibilité
+            }, 50); // Un petit délai pour forcer la transition à démarrer
+        }, 50); // Le délai pour la transition du modal
+
+        // Sauvegarder la position de défilement actuelle et empêcher le scroll
+        scrollPosition = window.pageYOffset;
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${scrollPosition}px`;
+    });
+});
+
+// Fermer le modal avec animation
+closeModal.addEventListener('click', () => {
+    modal.classList.remove('active'); // Retirer la classe active pour démarrer la fermeture
+
+    // Appliquer une classe pour commencer la transition de fermeture (réduction + opacité)
+    modal.querySelector('.modal-content').classList.add('closing'); // Ajouter la classe de fermeture
+
+    // Attendre la fin de la transition avant de cacher complètement le modal
+    setTimeout(() => {
+        modal.style.display = 'none';
+        document.body.style.position = '';
+        document.body.style.top = '';
+        window.scrollTo(0, scrollPosition); // Restaurer la position de scroll
+    }, 500); // Temps de transition (en ms)
+});
+
+// Charger les images dans le carrousel
+function loadImages(projectId) {
+    carousel.innerHTML = ''; // Vider le carrousel
+    projectImages[projectId].forEach(src => {
+        const img = document.createElement('img');
+        img.src = src;
+        carousel.appendChild(img);
+    });
+
+    // Créer et styliser le numéro de page
+    pageNumber.classList.add('page-number');
+    modal.querySelector('.modal-content').appendChild(pageNumber);
+
+    currentIndex = 0;
+    updateCarousel();
+}
+
+// Mettre à jour le carrousel et afficher le numéro de la page
+function updateCarousel() {
+    const images = carousel.querySelectorAll('img'); // Récupérer toutes les images du carrousel
+    images.forEach((img, index) => {
+        img.style.display = (index === currentIndex) ? 'block' : 'none';
+    });
+
+    // Mettre à jour le numéro de la page
+    const totalImages = projectImages[currentProjectId].length;
+    pageNumber.textContent = `${currentIndex + 1} / ${totalImages}`;
+}
+
+// Navigation dans le carrousel
+prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : projectImages[currentProjectId].length - 1;
+    updateCarousel();
+});
+
+nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex < projectImages[currentProjectId].length - 1) ? currentIndex + 1 : 0;
+    updateCarousel();
+});
+
+// Fermer le modal avec animation
+closeModal.addEventListener('click', () => {
+    modal.classList.remove('active'); // Retirer la classe active pour démarrer la fermeture
+
+    // Appliquer une classe pour commencer la transition de fermeture (réduction + opacité)
+    modal.querySelector('.modal-content').classList.add('closing'); // Ajouter la classe de fermeture
+
+    // Attendre la fin de la transition avant de cacher complètement le modal
+    setTimeout(() => {
+        modal.style.display = 'none';
+        document.body.style.position = '';
+        document.body.style.top = '';
+        window.scrollTo(0, scrollPosition); // Restaurer la position de scroll
+    }, 500); // Temps de transition (en ms)
+});
+
+// Fermer en cliquant à l'extérieur du contenu
+modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        closeModal.click(); // Réutiliser le handler de fermeture
+    }
+});
+
+</script>
+
+
+<!-- EmailJS Integration -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script>
+    // Initialize EmailJS
+    (function () {
+        emailjs.init("NWESkV4x91IgKxHLy"); // Remplace "YOUR_PUBLIC_KEY" par ta clé publique EmailJS
+    })();
+
+    // Form submission
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Template parameters for EmailJS
+        const templateParams = {
+            name: name,
+            email: email,
+            message: message,
+        };
+
+        // Send email using EmailJS
+        emailjs.send("service_om51x2r", "template_5vzwizp", templateParams)
+    .then(
+        function (response) {
+            console.log("SUCCESS!", response.status, response.text);
+            alert("Message envoyé avec succès !");
+        },
+        function (error) {
+            console.log("FAILED...", error);
+            alert("Échec de l'envoi : " + error.text);
+        }
+    );
+    });
+</script>
+
+
+
+</body>
+</html>
